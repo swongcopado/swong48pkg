@@ -1,9 +1,9 @@
 @isTest
 public with sharing class ExpensesUtilityTest {
 
+    // This is the test method
     @isTest
     static public void testSetDefaultAdditionalInfo() {
-        @startTest
         Expenses__c exp = new Expenses__c();
         exp.Date__c = new Date();
         exp.Amount__c = 99.99;
