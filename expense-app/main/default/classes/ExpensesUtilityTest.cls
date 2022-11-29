@@ -1,14 +1,16 @@
 @isTest
-public with sharing class ExpensesUtilityTest {
+public class ExpensesUtilityTest {
 
     // This is the test method
     @isTest
     static public void testSetDefaultAdditionalInfo() {
+        Test.startTest();
         Expenses__c exp = new Expenses__c();
         exp.Date__c = new Date();
         exp.Amount__c = 99.99;
         exp = ExpensesUtility.setDefaultAdditionalInfo(exp);
         System.assertEquals('Yet another expense', exp.Additional_Info__c, 'Default Additional info set incorrectly');
+        Test.stopTest();
     }
 
 }
