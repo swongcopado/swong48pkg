@@ -10,6 +10,13 @@
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "default": false
+        },
+        {
+            "path": "expense-app",
+            "package": "ExpenseApp-Alpha-0.0.0.1",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
         }
     ],
     "name": "swong48pkg",
@@ -17,6 +24,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "55.0",
     "packageAliases": {
-        "ExpenseApp": "0Ho5g000000GnBLCA0"
+        "ExpenseApp": "0Ho5g000000GnBLCA0",
+        "ExpenseApp-Alpha-0.0.0.1": "0Ho5g000000GnBQCA0"
     }
 }
