@@ -33,6 +33,11 @@
                 <label>Education</label>
             </value>
             <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
                 <fullName>Furniture</fullName>
                 <default>false</default>
                 <label>Furniture</label>
@@ -53,6 +58,21 @@
                 <label>Health</label>
             </value>
             <value>
+                <fullName>Insurance Premiums</fullName>
+                <default>false</default>
+                <label>Insurance Premiums</label>
+            </value>
+            <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
                 <fullName>Rent</fullName>
                 <default>false</default>
                 <label>Rent</label>
@@ -71,21 +91,6 @@
                 <fullName>Utilities</fullName>
                 <default>false</default>
                 <label>Utilities</label>
-            </value>
-            <value>
-                <fullName>Fees</fullName>
-                <default>false</default>
-                <label>Fees</label>
-            </value>
-            <value>
-                <fullName>Interest</fullName>
-                <default>false</default>
-                <label>Interest</label>
-            </value>
-            <value>
-                <fullName>Maintenance</fullName>
-                <default>false</default>
-                <label>Maintenance</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -113,6 +118,12 @@
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <valueName>Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency</controllingFieldValue>
+            <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Leisure</controllingFieldValue>
             <valueName>Subscriptions</valueName>
         </valueSettings>
@@ -128,14 +139,13 @@
             <valueName>Utilities</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
-            <controllingFieldValue>Investment</controllingFieldValue>
-            <valueName>Maintenance</valueName>
+            <valueName>Education</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
-            <valueName>Education</valueName>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <valueName>Fees</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
@@ -143,13 +153,12 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
-            <controllingFieldValue>Investment</controllingFieldValue>
-            <valueName>Rent</valueName>
+            <valueName>Insurance Premiums</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Investment</controllingFieldValue>
-            <valueName>Fees</valueName>
+            <valueName>Rent</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
