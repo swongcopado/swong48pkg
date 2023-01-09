@@ -13,6 +13,16 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Allowance</fullName>
+                <default>false</default>
+                <label>Allowance</label>
+            </value>
+            <value>
+                <fullName>Clothing</fullName>
+                <default>false</default>
+                <label>Clothing</label>
+            </value>
+            <value>
                 <fullName>Devices</fullName>
                 <default>false</default>
                 <label>Devices</label>
@@ -96,6 +106,12 @@
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Allowance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency</controllingFieldValue>
+            <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Leisure</controllingFieldValue>
             <valueName>Devices</valueName>
         </valueSettings>
@@ -137,6 +153,10 @@
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
             <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Household</controllingFieldValue>
+            <valueName>Clothing</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
