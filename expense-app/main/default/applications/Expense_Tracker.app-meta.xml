@@ -14,7 +14,7 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Expense Tracker</label>
     <navType>Standard</navType>
-    <tabs>Expense__c</tabs>
+    <tabs>Expense_Tracker</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Expense_Tracker_UtilityBar</utilityBar>
 </CustomApplication>
