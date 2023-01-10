@@ -59,7 +59,7 @@
             </value>
             <value>
                 <fullName>Groceries</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Groceries</label>
             </value>
             <value>
