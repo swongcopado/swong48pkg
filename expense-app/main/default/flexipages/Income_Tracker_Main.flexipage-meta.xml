@@ -5,11 +5,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>enableInlineEdit</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>entityName</name>
-                    <value>Expense__c</value>
+                    <value>Income__c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>filterName</name>
@@ -21,7 +21,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideSearchBar</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>pageSize</name>
@@ -35,40 +35,20 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText2</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Expense Tracker Main</masterLabel>
+    <masterLabel>Income Tracker Main</masterLabel>
     <quickActionList>
         <quickActionListItems>
-            <quickActionName>Create_Expense</quickActionName>
+            <quickActionName>Create_Income</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>Create_Income</quickActionName>
+            <quickActionName>Create_Expense</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <template>
