@@ -67,6 +67,9 @@
         <quickActionListItems>
             <quickActionName>Create_Expense</quickActionName>
         </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Create_Income</quickActionName>
+        </quickActionListItems>
     </quickActionList>
     <template>
         <name>flexipage:appHomeTemplateTwoColumnsStacked</name>
