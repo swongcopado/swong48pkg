@@ -15,6 +15,7 @@
     <label>Expense Tracker</label>
     <navType>Standard</navType>
     <tabs>Expense_Tracker_Main</tabs>
+    <tabs>Income_Tracker_Main</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Expense_Tracker_UtilityBar</utilityBar>
 </CustomApplication>
