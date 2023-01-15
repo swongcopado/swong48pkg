@@ -156,11 +156,11 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Expense</label>
     <nameField>
-        <label>Expense Name</label>
+        <label>Vendor Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Expenses</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
