@@ -43,6 +43,11 @@
                 <label>Education</label>
             </value>
             <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
                 <fullName>Fees</fullName>
                 <default>false</default>
                 <label>Fees</label>
@@ -50,7 +55,7 @@
             <value>
                 <fullName>Furniture</fullName>
                 <default>false</default>
-                <label>Furniture</label>
+                <label>Furniture and Equipment</label>
             </value>
             <value>
                 <fullName>Gifts</fullName>
@@ -81,6 +86,11 @@
                 <fullName>Maintenance</fullName>
                 <default>false</default>
                 <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Purchases</fullName>
+                <default>false</default>
+                <label>Purchases</label>
             </value>
             <value>
                 <fullName>Rent</fullName>
@@ -119,6 +129,7 @@
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Leisure</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Eating Out</valueName>
         </valueSettings>
         <valueSettings>
@@ -141,21 +152,25 @@
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Leisure</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Subscriptions</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Leisure</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Travel</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Utilities</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Clothing</valueName>
         </valueSettings>
         <valueSettings>
@@ -191,6 +206,14 @@
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
             <valueName>Gifts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Purchases</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
