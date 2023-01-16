@@ -2,6 +2,7 @@
   "orgName": "steven company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
+  "adminEmail": "swong@copado.com",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
