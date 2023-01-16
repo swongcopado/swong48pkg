@@ -4,6 +4,28 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>cacheAge</name>
+                    <value>1440</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>This Month&apos;s Expenses by Type</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>reportName</name>
+                    <value>Expenses_Report_This_Month_Zep</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showRefreshButton</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:reportChart</componentName>
+                <identifier>flexipage_reportChart</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>enableInlineEdit</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -25,7 +47,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>pageSize</name>
-                    <value>30</value>
+                    <value>10</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:filterListCard</componentName>
                 <identifier>flexipage_filterListCard</identifier>
@@ -42,25 +64,8 @@
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>reportName</name>
-                    <value>Expenses_Report_This_Month_Zep</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showRefreshButton</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:reportChart</componentName>
-                <identifier>flexipage_reportChart</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>cacheAge</name>
-                    <value>1440</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>label</name>
+                    <value>Last Month&apos;s Expenses by Type</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportName</name>
@@ -86,7 +91,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>All Time</value>
+                    <value>All Time Expenses by Type</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportName</name>
