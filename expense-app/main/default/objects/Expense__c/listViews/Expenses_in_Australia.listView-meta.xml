@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>All</fullName>
+    <fullName>Expenses_in_Australia</fullName>
     <columns>Date__c</columns>
     <columns>NAME</columns>
     <columns>Amount__c</columns>
@@ -9,5 +9,10 @@
     <columns>Additional_Info__c</columns>
     <columns>Tracking_Account__c</columns>
     <filterScope>Everything</filterScope>
-    <label>All</label>
+    <filters>
+        <field>Tracking_Account__c</field>
+        <operation>equals</operation>
+        <value>Australia</value>
+    </filters>
+    <label>Expenses in Australia</label>
 </ListView>
