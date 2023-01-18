@@ -41,6 +41,15 @@
     <columns>
         <field>Income__c.Additional_Info__c</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>Income__c.Tracking_Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Australia</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
