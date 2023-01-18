@@ -15,5 +15,24 @@ global class ExpenseTrackerPostInstallUtil implements InstallHandler {
             
         }
     }
+    
+    global void setAllTxnToTrackingAccount(String name) {
+	    List<Tracking_Account__c> taList = [SELECT Id from Tracking_Account__c WHERE Name=:name LIMIT 1];
+        if (taList.size() > 0) {
+            Id taId = taList[0].Id;
+            List<Expense__c> allExpenses = [SELECT Id, Name FROM Expense__c];
+            for (Expense__c exp: allExpenses) {
+                exp.Tracking_Account__c = taId;
+            }
+            update allExpenses;
+            List<Income__c> allIncome = [SELECT Id, Name FROM Income__c];
+            for (Income__c inc: allIncome) {
+                inc.Tracking_Account__c = taId;
+            }
+			update allIncome;            
+        }
+    }
 
+
+    
 }
