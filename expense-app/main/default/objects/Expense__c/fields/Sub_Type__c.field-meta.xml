@@ -28,6 +28,11 @@
                 <label>Devices</label>
             </value>
             <value>
+                <fullName>Doctors</fullName>
+                <default>false</default>
+                <label>Doctors</label>
+            </value>
+            <value>
                 <fullName>Donations</fullName>
                 <default>false</default>
                 <label>Donations</label>
@@ -70,7 +75,7 @@
             <value>
                 <fullName>Health</fullName>
                 <default>false</default>
-                <label>Health</label>
+                <label>Health *DO NOT USE*</label>
             </value>
             <value>
                 <fullName>Insurance Premiums</fullName>
@@ -88,6 +93,16 @@
                 <label>Maintenance</label>
             </value>
             <value>
+                <fullName>Medicine</fullName>
+                <default>false</default>
+                <label>Medicine</label>
+            </value>
+            <value>
+                <fullName>Personal Care</fullName>
+                <default>false</default>
+                <label>Personal Care</label>
+            </value>
+            <value>
                 <fullName>Purchases</fullName>
                 <default>false</default>
                 <label>Purchases</label>
@@ -101,6 +116,11 @@
                 <fullName>Subscriptions</fullName>
                 <default>false</default>
                 <label>Subscriptions</label>
+            </value>
+            <value>
+                <fullName>Supplements</fullName>
+                <default>false</default>
+                <label>Supplements</label>
             </value>
             <value>
                 <fullName>Travel</fullName>
@@ -214,6 +234,22 @@
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Purchases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Doctors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Personal Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Supplements</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
