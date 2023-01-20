@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Month__c</fullName>
+    <description>Income Month in Month Name</description>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH( Date__c ), 1, &apos;January&apos;, 2, &apos;February&apos;,3, &apos;March&apos;,4, &apos;April&apos;, 5, &apos;May&apos;,6, &apos;June&apos;,7, &apos;July&apos;,8, &apos;August&apos;,9, &apos;September&apos;, 10, &apos;October&apos;, 11, &apos;November&apos;, &apos;December&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Income Month</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
