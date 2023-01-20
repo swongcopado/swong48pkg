@@ -73,11 +73,6 @@
                 <label>Groceries</label>
             </value>
             <value>
-                <fullName>Health</fullName>
-                <default>false</default>
-                <label>Health *DO NOT USE*</label>
-            </value>
-            <value>
                 <fullName>Insurance Premiums</fullName>
                 <default>false</default>
                 <label>Insurance Premiums</label>
@@ -132,6 +127,12 @@
                 <default>false</default>
                 <label>Utilities</label>
             </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health *DO NOT USE*</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
@@ -156,11 +157,6 @@
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
             <valueName>Groceries</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Emergency</controllingFieldValue>
-            <controllingFieldValue>Household</controllingFieldValue>
-            <valueName>Health</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
