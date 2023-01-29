@@ -18,6 +18,11 @@
                 <label>Allowance</label>
             </value>
             <value>
+                <fullName>Apps and Games</fullName>
+                <default>false</default>
+                <label>Apps and Games</label>
+            </value>
+            <value>
                 <fullName>Clothing</fullName>
                 <default>false</default>
                 <label>Clothing</label>
@@ -183,6 +188,14 @@
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Apps and Games</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
