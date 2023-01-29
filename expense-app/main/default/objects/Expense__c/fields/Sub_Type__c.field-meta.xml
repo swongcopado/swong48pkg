@@ -103,6 +103,11 @@
                 <label>Personal Care</label>
             </value>
             <value>
+                <fullName>Principal Repayment</fullName>
+                <default>false</default>
+                <label>Principal Repayment</label>
+            </value>
+            <value>
                 <fullName>Purchases</fullName>
                 <default>false</default>
                 <label>Purchases</label>
@@ -227,6 +232,10 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Interest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <valueName>Principal Repayment</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
