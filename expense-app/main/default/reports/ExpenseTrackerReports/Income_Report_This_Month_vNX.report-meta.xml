@@ -43,7 +43,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Income__c.Tracking_Account__c</column>
+            <column>Income__c.Country__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
