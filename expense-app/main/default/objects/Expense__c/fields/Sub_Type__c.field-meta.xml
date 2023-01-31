@@ -78,6 +78,11 @@
                 <label>Groceries</label>
             </value>
             <value>
+                <fullName>Income Tax</fullName>
+                <default>false</default>
+                <label>Income Tax</label>
+            </value>
+            <value>
                 <fullName>Insurance Premiums</fullName>
                 <default>false</default>
                 <label>Insurance Premiums</label>
@@ -88,6 +93,11 @@
                 <label>Interest</label>
             </value>
             <value>
+                <fullName>Land Tax</fullName>
+                <default>false</default>
+                <label>Land Tax</label>
+            </value>
+            <value>
                 <fullName>Maintenance</fullName>
                 <default>false</default>
                 <label>Maintenance</label>
@@ -96,6 +106,11 @@
                 <fullName>Medicine</fullName>
                 <default>false</default>
                 <label>Medicine</label>
+            </value>
+            <value>
+                <fullName>Other Tax</fullName>
+                <default>false</default>
+                <label>Other Tax</label>
             </value>
             <value>
                 <fullName>Personal Care</fullName>
@@ -268,6 +283,18 @@
         <valueSettings>
             <controllingFieldValue>Health</controllingFieldValue>
             <valueName>Supplements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Income Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Land Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Other Tax</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
