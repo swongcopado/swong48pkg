@@ -77,6 +77,11 @@
                 <default>false</default>
                 <label>Reimbursement</label>
             </value>
+            <value>
+                <fullName>Superannuation</fullName>
+                <default>false</default>
+                <label>Superannuation</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Gifts</controllingFieldValue>
@@ -131,6 +136,10 @@
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Salary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Superannuation</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
