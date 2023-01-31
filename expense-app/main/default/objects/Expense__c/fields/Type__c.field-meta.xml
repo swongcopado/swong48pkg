@@ -17,6 +17,11 @@
                 <label>Emergency</label>
             </value>
             <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
                 <fullName>Health</fullName>
                 <default>false</default>
                 <label>Health</label>
