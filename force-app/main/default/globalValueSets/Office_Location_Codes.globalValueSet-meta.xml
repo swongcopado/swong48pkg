@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SYD</fullName>
+        <default>true</default>
+        <label>SYD</label>
+    </customValue>
+    <customValue>
+        <fullName>MRB</fullName>
+        <default>false</default>
+        <label>MRB</label>
+    </customValue>
+    <customValue>
+        <fullName>MEL</fullName>
+        <default>false</default>
+        <label>MEL</label>
+    </customValue>
+    <customValue>
+        <fullName>BRB</fullName>
+        <default>false</default>
+        <label>BRB</label>
+    </customValue>
+    <customValue>
+        <fullName>MDP</fullName>
+        <default>false</default>
+        <label>MDP</label>
+    </customValue>
+    <customValue>
+        <fullName>ASB</fullName>
+        <default>false</default>
+        <label>ASB</label>
+    </customValue>
+    <customValue>
+        <fullName>BLA</fullName>
+        <default>false</default>
+        <label>BLA</label>
+    </customValue>
+    <description>This is to test how Copado handles a Global Picklist Value Set that does not have last modified date</description>
+    <masterLabel>Office Location Codes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
