@@ -28,6 +28,11 @@
                 <label>Clothing</label>
             </value>
             <value>
+                <fullName>Council Rates</fullName>
+                <default>false</default>
+                <label>Council Rates</label>
+            </value>
+            <value>
                 <fullName>Devices</fullName>
                 <default>false</default>
                 <label>Devices</label>
@@ -283,6 +288,10 @@
         <valueSettings>
             <controllingFieldValue>Health</controllingFieldValue>
             <valueName>Supplements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Council Rates</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Government</controllingFieldValue>
