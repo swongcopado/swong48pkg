@@ -91,7 +91,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>All Time Income by Type</value>
+                    <value>This Year&apos;s Income by Type</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportName</name>
