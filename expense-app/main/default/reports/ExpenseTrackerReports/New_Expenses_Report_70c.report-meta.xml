@@ -69,6 +69,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Expense__c.Date__c</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>
