@@ -3,7 +3,7 @@
     <fullName>External_ID__c</fullName>
     <externalId>true</externalId>
     <label>External ID</label>
-    <length>30</length>
+    <length>60</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>
