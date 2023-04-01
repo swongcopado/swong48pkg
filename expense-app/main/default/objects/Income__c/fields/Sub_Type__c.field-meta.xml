@@ -67,6 +67,21 @@
                 <default>false</default>
                 <label>Winning</label>
             </value>
+            <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+                <label>Reimbursement</label>
+            </value>
+            <value>
+                <fullName>Superannuation</fullName>
+                <default>false</default>
+                <label>Superannuation</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Gifts</controllingFieldValue>
@@ -98,6 +113,11 @@
             <valueName>Rent</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Reimbursement</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Others</controllingFieldValue>
             <valueName>Sales</valueName>
         </valueSettings>
@@ -106,12 +126,20 @@
             <valueName>Winning</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Loyalty</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Bonus</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Salary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Superannuation</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

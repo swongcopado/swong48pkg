@@ -18,14 +18,29 @@
                 <label>Allowance</label>
             </value>
             <value>
+                <fullName>Apps and Games</fullName>
+                <default>false</default>
+                <label>Apps and Games</label>
+            </value>
+            <value>
                 <fullName>Clothing</fullName>
                 <default>false</default>
                 <label>Clothing</label>
             </value>
             <value>
+                <fullName>Council Rates</fullName>
+                <default>false</default>
+                <label>Council Rates</label>
+            </value>
+            <value>
                 <fullName>Devices</fullName>
                 <default>false</default>
                 <label>Devices</label>
+            </value>
+            <value>
+                <fullName>Doctors</fullName>
+                <default>false</default>
+                <label>Doctors</label>
             </value>
             <value>
                 <fullName>Donations</fullName>
@@ -68,9 +83,9 @@
                 <label>Groceries</label>
             </value>
             <value>
-                <fullName>Health</fullName>
+                <fullName>Income Tax</fullName>
                 <default>false</default>
-                <label>Health</label>
+                <label>Income Tax</label>
             </value>
             <value>
                 <fullName>Insurance Premiums</fullName>
@@ -83,9 +98,34 @@
                 <label>Interest</label>
             </value>
             <value>
+                <fullName>Land Tax</fullName>
+                <default>false</default>
+                <label>Land Tax</label>
+            </value>
+            <value>
                 <fullName>Maintenance</fullName>
                 <default>false</default>
                 <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Medicine</fullName>
+                <default>false</default>
+                <label>Medicine</label>
+            </value>
+            <value>
+                <fullName>Other Tax</fullName>
+                <default>false</default>
+                <label>Other Tax</label>
+            </value>
+            <value>
+                <fullName>Personal Care</fullName>
+                <default>false</default>
+                <label>Personal Care</label>
+            </value>
+            <value>
+                <fullName>Principal Repayment</fullName>
+                <default>false</default>
+                <label>Principal Repayment</label>
             </value>
             <value>
                 <fullName>Purchases</fullName>
@@ -103,6 +143,11 @@
                 <label>Subscriptions</label>
             </value>
             <value>
+                <fullName>Supplements</fullName>
+                <default>false</default>
+                <label>Supplements</label>
+            </value>
+            <value>
                 <fullName>Travel</fullName>
                 <default>false</default>
                 <label>Travel</label>
@@ -111,6 +156,12 @@
                 <fullName>Utilities</fullName>
                 <default>false</default>
                 <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health *DO NOT USE*</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -140,11 +191,6 @@
         <valueSettings>
             <controllingFieldValue>Emergency</controllingFieldValue>
             <controllingFieldValue>Household</controllingFieldValue>
-            <valueName>Health</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Emergency</controllingFieldValue>
-            <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Maintenance</valueName>
         </valueSettings>
@@ -167,6 +213,14 @@
             <controllingFieldValue>Household</controllingFieldValue>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Apps and Games</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
@@ -200,6 +254,10 @@
             <valueName>Interest</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <valueName>Principal Repayment</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
             <valueName>Donations</valueName>
         </valueSettings>
@@ -214,6 +272,38 @@
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Purchases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Doctors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Personal Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Supplements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Council Rates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Income Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Land Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Other Tax</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

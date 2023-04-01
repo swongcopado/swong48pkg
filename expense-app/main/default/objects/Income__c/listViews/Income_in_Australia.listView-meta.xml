@@ -7,12 +7,7 @@
     <columns>Type__c</columns>
     <columns>Sub_Type__c</columns>
     <columns>Additional_Info__c</columns>
-    <columns>Tracking_Account__c</columns>
+    <columns>Income_Month__c</columns>
     <filterScope>Everything</filterScope>
-    <filters>
-        <field>Tracking_Account__c</field>
-        <operation>equals</operation>
-        <value>Australia</value>
-    </filters>
     <label>Income in Australia</label>
 </ListView>

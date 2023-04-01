@@ -7,7 +7,6 @@
     <columns>Type__c</columns>
     <columns>Sub_Type__c</columns>
     <columns>Additional_Info__c</columns>
-    <columns>Tracking_Account__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

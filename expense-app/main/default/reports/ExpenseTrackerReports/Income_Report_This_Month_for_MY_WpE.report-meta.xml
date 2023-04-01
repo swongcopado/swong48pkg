@@ -47,7 +47,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Australia</value>
+            <value>Malaysia</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -61,7 +61,7 @@
         <field>Income__c.Sub_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Income Report (This Month)</name>
+    <name>Income Report (This Month) for MY</name>
     <params>
         <name>co</name>
         <value>1</value>

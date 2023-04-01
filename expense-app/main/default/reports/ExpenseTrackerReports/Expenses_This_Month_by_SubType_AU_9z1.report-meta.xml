@@ -7,43 +7,39 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Income__c.Amount__c</column>
+            <column>Expense__c.Amount__c</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Income__c.Type__c</groupingColumn>
+        <groupingColumn>Expense__c.Sub_Type__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Income__c.Sub_Type__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
-        <showValues>false</showValues>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title>Income by Type and Sub-Type</title>
+        <title>Expenses this Month by Sub-Type</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Income__c.Date__c</field>
-    </columns>
-    <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Income__c.Amount__c</field>
+        <field>Expense__c.Additional_Info__c</field>
     </columns>
     <columns>
-        <field>Income__c.Additional_Info__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Expense__c.Amount__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Income__c.Country__c</column>
+            <column>Expense__c.Country__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
@@ -53,26 +49,21 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Income__c.Type__c</field>
+        <field>Expense__c.Sub_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Income__c.Sub_Type__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Income Report (This Month)</name>
+    <name>Expenses This Month by Sub-Type (AU)</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Income__c</reportType>
+    <reportType>CustomEntity$Expense__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Income__c.Date__c</dateColumn>
+        <dateColumn>Expense__c.Date__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
