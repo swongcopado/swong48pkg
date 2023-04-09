@@ -27,6 +27,11 @@
             </quickActionLayoutItems>
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
+                <field>Is_Monthly_Expense__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
                 <field>Amount__c</field>
                 <uiBehavior>Required</uiBehavior>
             </quickActionLayoutItems>
