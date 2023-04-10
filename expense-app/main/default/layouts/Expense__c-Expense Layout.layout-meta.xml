@@ -102,9 +102,14 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Expense__c.Clone_Monthly_Expenses</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>3</sortOrder>
+            <sortOrder>4</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
