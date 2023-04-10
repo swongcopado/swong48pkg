@@ -77,6 +77,13 @@
                 <elementReference>IncreaseExpenseDatebyNoofMonthsDiff</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Through_Expense_Records_and_Update_Month.Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Current_Expense_Date</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_New_Expense_to_Collection</targetReference>
         </connector>
