@@ -9,15 +9,16 @@
             <axisBinding>y</axisBinding>
             <column>Expense__c.Amount__c</column>
         </chartSummaries>
-        <chartType>Donut</chartType>
+        <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Expense__c.Sub_Type__c</groupingColumn>
+        <groupingColumn>Expense__c.Type__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>Expense__c.Sub_Type__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>true</showTotal>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
         <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -47,6 +48,11 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Expense__c.Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Expense__c.Sub_Type__c</field>
