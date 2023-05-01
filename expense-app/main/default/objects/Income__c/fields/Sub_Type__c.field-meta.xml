@@ -43,6 +43,21 @@
                 <label>Inheritance</label>
             </value>
             <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+                <label>Medicare</label>
+            </value>
+            <value>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+                <label>Reimbursement</label>
+            </value>
+            <value>
                 <fullName>Rent</fullName>
                 <default>false</default>
                 <label>Rent</label>
@@ -63,24 +78,14 @@
                 <label>Special Occasion</label>
             </value>
             <value>
-                <fullName>Winning</fullName>
-                <default>false</default>
-                <label>Winning</label>
-            </value>
-            <value>
-                <fullName>Loyalty</fullName>
-                <default>false</default>
-                <label>Loyalty</label>
-            </value>
-            <value>
-                <fullName>Reimbursement</fullName>
-                <default>false</default>
-                <label>Reimbursement</label>
-            </value>
-            <value>
                 <fullName>Superannuation</fullName>
                 <default>false</default>
                 <label>Superannuation</label>
+            </value>
+            <value>
+                <fullName>Winning</fullName>
+                <default>false</default>
+                <label>Winning</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -110,12 +115,20 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
-            <valueName>Rent</valueName>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Reimbursement</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
-            <controllingFieldValue>Work</controllingFieldValue>
-            <valueName>Reimbursement</valueName>
+            <valueName>Rent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Loyalty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Medicare</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Others</controllingFieldValue>
@@ -124,10 +137,6 @@
         <valueSettings>
             <controllingFieldValue>Others</controllingFieldValue>
             <valueName>Winning</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Others</controllingFieldValue>
-            <valueName>Loyalty</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
