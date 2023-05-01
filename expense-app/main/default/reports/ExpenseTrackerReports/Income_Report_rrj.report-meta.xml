@@ -53,6 +53,11 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
+        <field>Income__c.Income_Month__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
         <field>Income__c.Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
