@@ -64,5 +64,25 @@ public class ExpenseTrackerTools {
         upsert expenses;
         upsert incomes;
     }
+    
+    static public Expense__c LinkExpenseToLedger(Expense__c exp) {
+        String ledgerName = ExpenseTrackerTools.getLedgerName(exp.Date__c.Year(), exp.Date__c.Month());
+        List<Ledger__c> ledger = [SELECT Id, Name from Ledger__c WHERE Name = :ledgerName];
+        if (ledger.size()>0) {
+            exp.Ledger__c = ledger[0].Id;
+        }
+        
+        return exp;
+    }
 
+    static public Income__c LinkIncomeToLedger(Income__c inc) {
+        String ledgerName = ExpenseTrackerTools.getLedgerName(inc.Date__c.Year(), inc.Date__c.Month());
+        List<Ledger__c> ledger = [SELECT Id, Name from Ledger__c WHERE Name = :ledgerName];
+        if (ledger.size()>0) {
+            inc.Ledger__c = ledger[0].Id;
+        }
+        
+        return inc;
+    }    
+    
 }
