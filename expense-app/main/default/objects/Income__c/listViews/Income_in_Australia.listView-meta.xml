@@ -8,6 +8,7 @@
     <columns>Sub_Type__c</columns>
     <columns>Additional_Info__c</columns>
     <columns>Income_Month__c</columns>
+    <columns>Ledger__c</columns>
     <filterScope>Everything</filterScope>
     <label>Income in Australia</label>
 </ListView>
