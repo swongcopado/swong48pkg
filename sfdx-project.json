@@ -7,8 +7,8 @@
         {
             "path": "expense-app",
             "package": "ExpenseApp",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
+            "versionName": "ver 0.2",
+            "versionNumber": "0.2.0.NEXT",
             "default": true
         },
         {
@@ -58,6 +58,7 @@
         "ExpenseAppUP1@0.2.0-2-main": "04t5g000000VLPNAA4",
         "ExpenseAppUP1@0.2.0-3-main": "04t5g000000VLPSAA4",
         "ExpenseAppUP1@0.2.0-4-main": "04t5g000000VLaMAAW",
-        "ExpenseAppUP1@0.2.0-5-main": "04t5g000000VLfgAAG"
+        "ExpenseAppUP1@0.2.0-5-main": "04t5g000000VLfgAAG",
+        "ExpenseAppUP1@0.2.0-6-main": "04t5g000000VLh3AAG"
     }
 }
