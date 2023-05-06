@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <description>The Date of the Ledger. The important info here is the Month and the Year as this is a Monthly Ledger</description>
+    <externalId>false</externalId>
+    <label>Date</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
