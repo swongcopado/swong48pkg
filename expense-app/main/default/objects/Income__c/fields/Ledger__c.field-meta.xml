@@ -7,7 +7,7 @@
     <referenceTo>Ledger__c</referenceTo>
     <relationshipLabel>Incomes</relationshipLabel>
     <relationshipName>Incomes</relationshipName>
-    <required>true</required>
+    <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
 </CustomField>
