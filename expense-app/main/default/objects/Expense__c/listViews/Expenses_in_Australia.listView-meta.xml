@@ -9,6 +9,12 @@
     <columns>Sub_Type__c</columns>
     <columns>Additional_Info__c</columns>
     <columns>Expense_Month__c</columns>
+    <columns>Ledger__c</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Expense_Month__c</field>
+        <operation>greaterThan</operation>
+        <value>4</value>
+    </filters>
     <label>Expenses in Australia</label>
 </ListView>
