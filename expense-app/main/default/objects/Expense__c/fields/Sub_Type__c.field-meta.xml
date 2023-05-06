@@ -23,6 +23,11 @@
                 <label>Apps and Games</label>
             </value>
             <value>
+                <fullName>Asset Purchase</fullName>
+                <default>false</default>
+                <label>Asset Purchase</label>
+            </value>
+            <value>
                 <fullName>Clothing</fullName>
                 <default>false</default>
                 <label>Clothing</label>
@@ -256,6 +261,10 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Principal Repayment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Asset Purchase</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
