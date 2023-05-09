@@ -22,6 +22,10 @@
                 <behavior>Readonly</behavior>
                 <field>Month__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Country__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
