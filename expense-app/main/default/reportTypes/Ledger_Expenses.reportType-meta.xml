@@ -65,17 +65,27 @@
             <field>Country__c</field>
             <table>Ledger__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Expenses__c</field>
+            <table>Ledger__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Income__c</field>
+            <table>Ledger__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Investments__c</field>
+            <table>Ledger__c</table>
+        </columns>
         <masterLabel>Ledgers</masterLabel>
     </sections>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>Ledger__c.Expenses__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
             <table>Ledger__c.Expenses__r</table>
         </columns>
         <columns>
