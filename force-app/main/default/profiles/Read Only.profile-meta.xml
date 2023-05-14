@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
         <field>Expense__c.Additional_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Ledger__c.Total_Expenses__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Ledger__c.Total_Income__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Ledger__c.Total_Investments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Ledger__c-Ledger Layout</layout>
+    </layoutAssignments>
+    <loginHours n1:nil="true" />
     <tabVisibilities>
         <tab>Expense__c</tab>
         <visibility>DefaultOn</visibility>
