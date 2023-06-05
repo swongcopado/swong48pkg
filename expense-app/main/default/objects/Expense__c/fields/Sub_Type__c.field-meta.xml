@@ -256,15 +256,16 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Asset Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Interest</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Principal Repayment</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>Asset Purchase</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
