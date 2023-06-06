@@ -80,6 +80,11 @@
             <field>Total_Investments__c</field>
             <table>Ledger__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>External_ID__c</field>
+            <table>Ledger__c</table>
+        </columns>
         <masterLabel>Ledgers</masterLabel>
     </sections>
     <sections>
