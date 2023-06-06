@@ -9,7 +9,7 @@
             "package": "ExpenseAppUP1",
             "versionName": "ver 0.3",
             "versionNumber": "0.3.0.NEXT",
-            "default": false
+            "default": true
         }
     ],
     "name": "swong48pkg",
