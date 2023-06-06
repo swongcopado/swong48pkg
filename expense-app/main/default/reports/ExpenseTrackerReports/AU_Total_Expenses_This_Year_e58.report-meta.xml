@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Ledger__c.Total_Expenses__c</column>
+            <column>Expense__c.Amount__c</column>
         </chartSummaries>
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -29,8 +29,17 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Ledger__c.Total_Expenses__c</field>
+        <field>Expense__c.Amount__c</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>Ledger__c.Country__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Australia</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

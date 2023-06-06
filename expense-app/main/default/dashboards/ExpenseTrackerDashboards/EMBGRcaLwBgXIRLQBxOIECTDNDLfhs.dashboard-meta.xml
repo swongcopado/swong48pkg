@@ -15,17 +15,17 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
-                    <column>Ledger__c.Total_Expenses__c</column>
+                    <column>Expense__c.Amount__c</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <decimalPrecision>2</decimalPrecision>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>AU Total Expenses This Year</header>
+                <header>Total Expenses in Australia This Year</header>
                 <indicatorBreakpoint1>450000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>550000.0</indicatorBreakpoint2>
-                <indicatorHighColor>#FF1100</indicatorHighColor>
-                <indicatorLowColor>#2FA242</indicatorLowColor>
+                <indicatorHighColor>#FA1100</indicatorHighColor>
+                <indicatorLowColor>#44C133</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>ExpenseTrackerReports/AU_Total_Expenses_This_Year_e58</report>
                 <showRange>false</showRange>
@@ -67,7 +67,7 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Ledger__c.Total_Expenses__c</column>
+                    <column>Expense__c.Amount__c</column>
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
                 <decimalPrecision>-1</decimalPrecision>
@@ -88,12 +88,13 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>AU Total Expenses This Year</header>
+                <header>Total Expenses in Australia This Year</header>
                 <legendPosition>Right</legendPosition>
                 <report>ExpenseTrackerReports/AU_Total_Expenses_This_Year_e58</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Breakdown by Months and Type</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>6</rowIndex>

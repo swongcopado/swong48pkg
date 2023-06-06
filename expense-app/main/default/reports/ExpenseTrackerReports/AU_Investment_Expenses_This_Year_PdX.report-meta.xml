@@ -15,6 +15,13 @@
             <operator>equals</operator>
             <value>Investment</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Ledger__c.Country__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Australia</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -28,7 +35,7 @@
         <value>1</value>
     </params>
     <reportType>CustomEntityCustomEntity$Ledger__c$Expense__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
