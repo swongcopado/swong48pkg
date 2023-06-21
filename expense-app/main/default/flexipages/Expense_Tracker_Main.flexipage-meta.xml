@@ -3,6 +3,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>lwcCreateEntries</componentName>
+                <identifier>c_lwcCreateEntries</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>dashboardName</name>
                     <value>kNzafBmByCmpxWadkTlQjYZSvloFJM</value>
@@ -55,10 +61,7 @@
     <masterLabel>Expense Tracker Main</masterLabel>
     <quickActionList>
         <quickActionListItems>
-            <quickActionName>Create_Expense</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>Create_Income</quickActionName>
+            <quickActionName>New_Refuel_Entry</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <template>
