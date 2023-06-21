@@ -6,24 +6,10 @@
         },
         {
             "path": "expense-app",
-            "package": "ExpenseApp",
+            "package": "ExpenseAppUP1",
             "versionName": "ver 0.3",
             "versionNumber": "0.3.0.NEXT",
             "default": true
-        },
-        {
-            "path": "expense-app",
-            "package": "ExpenseApp-Alpha-0.0.0.1",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
-            "default": false
-        },
-        {
-            "path": "expense-app",
-            "package": "ExpenseAppUP1",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
-            "default": false
         }
     ],
     "name": "swong48pkg",
