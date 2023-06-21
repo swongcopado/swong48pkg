@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome" access="global">
+    <lightning:navigation aura:id="navService"/>
+    <lightning:button label="Create Expense" onclick="{! c.createExpenseRecord }" />	
+	<lightning:navigation aura:id="navService"/>
+    <lightning:button label="Create Income" onclick="{! c.createIncomeRecord }" />
+	<lightning:navigation aura:id="navService"/>
+    <lightning:button label="Create Re-fuel Entry" onclick="{! c.createRefuelEntryRecord }" />
+</aura:component>
