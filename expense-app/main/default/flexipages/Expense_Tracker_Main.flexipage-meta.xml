@@ -3,6 +3,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>lwcCreateEntries</componentName>
+                <identifier>c_lwcCreateEntries</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>dashboardName</name>
                     <value>kNzafBmByCmpxWadkTlQjYZSvloFJM</value>
@@ -53,14 +59,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Expense Tracker Main</masterLabel>
-    <quickActionList>
-        <quickActionListItems>
-            <quickActionName>Create_Expense</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>Create_Income</quickActionName>
-        </quickActionListItems>
-    </quickActionList>
     <template>
         <name>flexipage:appHomeTemplateTwoColumns</name>
     </template>
