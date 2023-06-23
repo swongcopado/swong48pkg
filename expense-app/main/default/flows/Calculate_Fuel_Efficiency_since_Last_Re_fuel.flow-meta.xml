@@ -71,14 +71,14 @@
             <field>Date__c</field>
             <operator>LessThanOrEqualTo</operator>
             <value>
-                <elementReference>$Record__Prior.Date__c</elementReference>
+                <elementReference>$Record.Date__c</elementReference>
             </value>
         </filters>
         <filters>
             <field>Odometer__c</field>
             <operator>LessThan</operator>
             <value>
-                <elementReference>$Record__Prior.Odometer__c</elementReference>
+                <elementReference>$Record.Odometer__c</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
