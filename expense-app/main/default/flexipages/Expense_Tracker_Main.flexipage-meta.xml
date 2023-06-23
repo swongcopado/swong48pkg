@@ -59,11 +59,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Expense Tracker Main</masterLabel>
-    <quickActionList>
-        <quickActionListItems>
-            <quickActionName>New_Refuel_Entry</quickActionName>
-        </quickActionListItems>
-    </quickActionList>
     <template>
         <name>flexipage:appHomeTemplateTwoColumns</name>
     </template>
