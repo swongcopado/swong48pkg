@@ -118,6 +118,11 @@
                 <label>Medicine</label>
             </value>
             <value>
+                <fullName>Movies</fullName>
+                <default>false</default>
+                <label>Movies</label>
+            </value>
+            <value>
                 <fullName>Other Tax</fullName>
                 <default>false</default>
                 <label>Other Tax</label>
@@ -266,6 +271,10 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Principal Repayment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <valueName>Movies</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
