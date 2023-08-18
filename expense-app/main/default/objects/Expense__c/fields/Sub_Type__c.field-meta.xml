@@ -68,6 +68,11 @@
                 <label>Entertainment</label>
             </value>
             <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
                 <fullName>Fees</fullName>
                 <default>false</default>
                 <label>Fees</label>
@@ -266,6 +271,10 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Principal Repayment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <valueName>Events</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
