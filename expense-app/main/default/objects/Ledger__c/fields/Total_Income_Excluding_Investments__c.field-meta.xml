@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Income_Excluding_Investments__c</fullName>
+    <description>Total Income excluding Investment type income</description>
+    <externalId>false</externalId>
+    <label>Total Income Excluding Investments</label>
+    <summarizedField>Income__c.Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Income__c.Type__c</field>
+        <operation>notEqual</operation>
+        <value>Investment</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Income__c.Ledger__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
