@@ -38,6 +38,11 @@
                 <label>Dividend</label>
             </value>
             <value>
+                <fullName>Income Tax Refund</fullName>
+                <default>false</default>
+                <label>Income Tax Refund</label>
+            </value>
+            <value>
                 <fullName>Inheritance</fullName>
                 <default>false</default>
                 <label>Inheritance</label>
@@ -141,6 +146,10 @@
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
             <valueName>Bonus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Work</controllingFieldValue>
+            <valueName>Income Tax Refund</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Work</controllingFieldValue>
