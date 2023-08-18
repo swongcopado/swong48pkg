@@ -85,6 +85,21 @@
             <field>External_ID__c</field>
             <table>Ledger__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Expenses_excluding_Investments__c</field>
+            <table>Ledger__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Income_Excluding_Investments__c</field>
+            <table>Ledger__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Income_excluding_Super__c</field>
+            <table>Ledger__c</table>
+        </columns>
         <masterLabel>Ledgers</masterLabel>
     </sections>
     <sections>
