@@ -68,6 +68,11 @@
                 <label>Entertainment</label>
             </value>
             <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
                 <fullName>Fees</fullName>
                 <default>false</default>
                 <label>Fees</label>
@@ -116,11 +121,6 @@
                 <fullName>Medicine</fullName>
                 <default>false</default>
                 <label>Medicine</label>
-            </value>
-            <value>
-                <fullName>Movies</fullName>
-                <default>false</default>
-                <label>Movies</label>
             </value>
             <value>
                 <fullName>Other Tax</fullName>
@@ -274,7 +274,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Leisure</controllingFieldValue>
-            <valueName>Movies</valueName>
+            <valueName>Events</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
