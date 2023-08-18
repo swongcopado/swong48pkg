@@ -28,6 +28,11 @@
                 <label>Asset Purchase</label>
             </value>
             <value>
+                <fullName>Books and Magazines</fullName>
+                <default>false</default>
+                <label>Books and Magazines</label>
+            </value>
+            <value>
                 <fullName>Clothing</fullName>
                 <default>false</default>
                 <label>Clothing</label>
@@ -66,6 +71,11 @@
                 <fullName>Entertainment</fullName>
                 <default>false</default>
                 <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
             </value>
             <value>
                 <fullName>Fees</fullName>
@@ -243,6 +253,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Household</controllingFieldValue>
+            <controllingFieldValue>Leisure</controllingFieldValue>
             <valueName>Furniture</valueName>
         </valueSettings>
         <valueSettings>
@@ -266,6 +277,14 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Principal Repayment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <valueName>Books and Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <valueName>Events</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
