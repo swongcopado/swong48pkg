@@ -5,7 +5,7 @@
         <name>Add_New_Expense_to_Collection</name>
         <label>Add New Expense to Collection</label>
         <locationX>490</locationX>
-        <locationY>998</locationY>
+        <locationY>890</locationY>
         <assignmentItems>
             <assignToReference>New_Month_Expenses</assignToReference>
             <operator>Add</operator>
@@ -21,7 +21,7 @@
         <name>Add_to_Number_of_Records_Cloned</name>
         <label>Add to Number of Records Cloned</label>
         <locationX>490</locationX>
-        <locationY>1118</locationY>
+        <locationY>998</locationY>
         <assignmentItems>
             <assignToReference>No_of_Records_Cloned</assignToReference>
             <operator>Assign</operator>
@@ -37,12 +37,12 @@
         <name>Calculate_the_No_of_Months_Difference_and_Store_in_Var</name>
         <label>Calculate the No of Months Difference and Store in Var</label>
         <locationX>402</locationX>
-        <locationY>398</locationY>
+        <locationY>350</locationY>
         <assignmentItems>
             <assignToReference>No_of_Months_Difference</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>SubtractToMonthfromFromMonth</elementReference>
+                <elementReference>Subtract_From_Date_from_To_Date</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -53,7 +53,7 @@
         <name>Get_Current_Expense_Date_and_Assign_to_Var</name>
         <label>Get Current Expense Date and Assign to Var</label>
         <locationX>490</locationX>
-        <locationY>758</locationY>
+        <locationY>674</locationY>
         <assignmentItems>
             <assignToReference>Current_Expense_Date</assignToReference>
             <operator>Assign</operator>
@@ -69,7 +69,7 @@
         <name>Increment_Expense_Date_by_No_of_Months_Difference</name>
         <label>Increment Expense Date by No of Months Difference</label>
         <locationX>490</locationX>
-        <locationY>878</locationY>
+        <locationY>782</locationY>
         <assignmentItems>
             <assignToReference>Current_Expense_Date</assignToReference>
             <operator>Assign</operator>
@@ -192,11 +192,27 @@
             <numberValue>1.0</numberValue>
         </value>
     </choices>
+    <choices>
+        <name>Year_2023</name>
+        <choiceText>2023</choiceText>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>2023.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Year_2024</name>
+        <choiceText>2024</choiceText>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>2024.0</numberValue>
+        </value>
+    </choices>
     <decisions>
         <name>Is_To_Date_Greater_Than_From_Date</name>
         <label>Is To Date Greater Than From Date</label>
         <locationX>226</locationX>
-        <locationY>278</locationY>
+        <locationY>242</locationY>
         <defaultConnector>
             <targetReference>Calculate_the_No_of_Months_Difference_and_Store_in_Var</targetReference>
         </defaultConnector>
@@ -205,10 +221,10 @@
             <name>No</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Copy_To_Month</leftValueReference>
+                <leftValueReference>Copy_To_Date</leftValueReference>
                 <operator>LessThanOrEqualTo</operator>
                 <rightValue>
-                    <elementReference>Copy_From_Month</elementReference>
+                    <elementReference>Copy_From_Date</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -218,6 +234,23 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <description>Get a date representation of the last day of the month and year of the date selected in the Copy From Date</description>
+        <name>End_of_Copy_From_Date</name>
+        <dataType>Date</dataType>
+        <expression>IF (MONTH ({!Copy_From_Date})=12, DATE (YEAR ({!Copy_From_Date}),12,31), DATE (YEAR ({!Copy_From_Date}),MONTH ({!Copy_From_Date})+1, 1)-1)</expression>
+    </formulas>
+    <formulas>
+        <name>From_Month</name>
+        <dataType>Number</dataType>
+        <expression>MONTH({!Copy_From_Date})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Get_Today_Date</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
     <formulas>
         <name>IncreaseExpenseDatebyNoofMonthsDiff</name>
         <dataType>Date</dataType>
@@ -230,10 +263,16 @@
         <scale>2</scale>
     </formulas>
     <formulas>
-        <name>SubtractToMonthfromFromMonth</name>
+        <description>Gets the start date of the month and year of the date selected in the Copy From Date field</description>
+        <name>Start_of_Copy_From_Date</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR({!Copy_From_Date}),MONTH({!Copy_From_Date}),1)</expression>
+    </formulas>
+    <formulas>
+        <name>Subtract_From_Date_from_To_Date</name>
         <dataType>Number</dataType>
-        <expression>{!Copy_To_Month}-{!Copy_From_Month}</expression>
-        <scale>0</scale>
+        <expression>(MONTH({!Copy_To_Date}) - MONTH({!Copy_From_Date}))+( ( YEAR({!Copy_To_Date}) - YEAR({!Copy_From_Date}) ) * 12 )</expression>
+        <scale>2</scale>
     </formulas>
     <interviewLabel>Clone Monthly Expenses {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Clone Monthly Expenses</label>
@@ -241,7 +280,7 @@
         <name>Loop_Through_Expense_Records_and_Update_Month</name>
         <label>Loop Through Expense Records and Update Month</label>
         <locationX>402</locationX>
-        <locationY>638</locationY>
+        <locationY>566</locationY>
         <collectionReference>Read_Expenses_to_Copy_From</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -274,7 +313,7 @@
         <name>Create_new_Expense_Record_with_New_Date</name>
         <label>Create new Expense Record with New Date</label>
         <locationX>402</locationX>
-        <locationY>1334</locationY>
+        <locationY>1190</locationY>
         <connector>
             <targetReference>Monthly_Expenses_Successfully_Cloned</targetReference>
         </connector>
@@ -284,7 +323,7 @@
         <name>Read_Expenses_to_Copy_From</name>
         <label>Read Expenses to Copy From</label>
         <locationX>402</locationX>
-        <locationY>518</locationY>
+        <locationY>458</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_Through_Expense_Records_and_Update_Month</targetReference>
@@ -298,10 +337,17 @@
             </value>
         </filters>
         <filters>
-            <field>Expense_Month__c</field>
-            <operator>EqualTo</operator>
+            <field>Date__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
             <value>
-                <elementReference>Copy_From_Month</elementReference>
+                <elementReference>Start_of_Copy_From_Date</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>End_of_Copy_From_Date</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -315,7 +361,7 @@
         <name>Clone_Monthly_Expenses</name>
         <label>Clone Monthly Expenses</label>
         <locationX>226</locationX>
-        <locationY>158</locationY>
+        <locationY>134</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -323,46 +369,24 @@
             <targetReference>Is_To_Date_Greater_Than_From_Date</targetReference>
         </connector>
         <fields>
-            <name>Copy_From_Month</name>
-            <choiceReferences>Month_1</choiceReferences>
-            <choiceReferences>Month_2</choiceReferences>
-            <choiceReferences>Month_3</choiceReferences>
-            <choiceReferences>Month_4</choiceReferences>
-            <choiceReferences>Month_5</choiceReferences>
-            <choiceReferences>Month_6</choiceReferences>
-            <choiceReferences>Month_7</choiceReferences>
-            <choiceReferences>Month_8</choiceReferences>
-            <choiceReferences>Month_9</choiceReferences>
-            <choiceReferences>Month_10</choiceReferences>
-            <choiceReferences>Month_11</choiceReferences>
-            <choiceReferences>Month_12</choiceReferences>
-            <dataType>Number</dataType>
-            <defaultSelectedChoiceReference>Month_1</defaultSelectedChoiceReference>
-            <fieldText>Copy From Month</fieldText>
-            <fieldType>DropdownBox</fieldType>
+            <name>Copy_From_Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Today_Date</elementReference>
+            </defaultValue>
+            <fieldText>Copy From Date</fieldText>
+            <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
-            <scale>0</scale>
         </fields>
         <fields>
-            <name>Copy_To_Month</name>
-            <choiceReferences>Month_1</choiceReferences>
-            <choiceReferences>Month_2</choiceReferences>
-            <choiceReferences>Month_3</choiceReferences>
-            <choiceReferences>Month_4</choiceReferences>
-            <choiceReferences>Month_5</choiceReferences>
-            <choiceReferences>Month_6</choiceReferences>
-            <choiceReferences>Month_7</choiceReferences>
-            <choiceReferences>Month_8</choiceReferences>
-            <choiceReferences>Month_9</choiceReferences>
-            <choiceReferences>Month_10</choiceReferences>
-            <choiceReferences>Month_11</choiceReferences>
-            <choiceReferences>Month_12</choiceReferences>
-            <dataType>Number</dataType>
-            <defaultSelectedChoiceReference>Month_1</defaultSelectedChoiceReference>
-            <fieldText>Copy To Month</fieldText>
-            <fieldType>DropdownBox</fieldType>
+            <name>Copy_To_Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Today_Date</elementReference>
+            </defaultValue>
+            <fieldText>Copy To Date</fieldText>
+            <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
-            <scale>0</scale>
         </fields>
         <helpText>&lt;p&gt;Select the month to copy from and the month to copy to.&lt;/p&gt;</helpText>
         <showFooter>true</showFooter>
@@ -372,13 +396,13 @@
         <name>Monthly_Expenses_Successfully_Cloned</name>
         <label>Monthly Expenses Successfully Cloned</label>
         <locationX>402</locationX>
-        <locationY>1454</locationY>
+        <locationY>1298</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <fields>
             <name>Success_Message</name>
-            <fieldText>&lt;p&gt;Automation has successfully cloned &lt;strong&gt;{!No_of_Records_Cloned}&lt;/strong&gt; Monthly Expenses from &lt;strong&gt;{!Copy_From_Month}&lt;/strong&gt; to &lt;strong&gt;{!Copy_To_Month}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can close this Tab now or click Next to clone another month.&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Automation has successfully cloned &lt;strong&gt;{!No_of_Records_Cloned}&lt;/strong&gt; Monthly Expenses from &lt;strong&gt;{!Copy_From_Date} &lt;/strong&gt;to &lt;strong&gt;{!Copy_To_Date}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can close this Tab now or click Next to clone another month.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -388,7 +412,7 @@
         <name>You_have_entered_invalid_inputs</name>
         <label>You have entered invalid inputs</label>
         <locationX>50</locationX>
-        <locationY>398</locationY>
+        <locationY>350</locationY>
         <allowBack>true</allowBack>
         <allowFinish>false</allowFinish>
         <allowPause>true</allowPause>
@@ -441,9 +465,6 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <scale>0</scale>
-        <value>
-            <elementReference>SubtractToMonthfromFromMonth</elementReference>
-        </value>
     </variables>
     <variables>
         <name>No_of_Records_Cloned</name>
