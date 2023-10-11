@@ -19,32 +19,36 @@
                     <axisBinding>y</axisBinding>
                     <column>Ledger__c.Cashflow__c</column>
                 </chartSummary>
-                <componentType>ColumnGrouped</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Ledger__c.Total_Income_excluding_Super__c</column>
+                </chartSummary>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Ledger__c.Total_Expenses__c</column>
+                </chartSummary>
+                <componentType>Column</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Ledger__c.Year__c</groupingColumn>
                 <groupingColumn>Ledger__c.Month__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
-                    <groupingSorts>
-                        <groupingLevel>g2</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
                 </groupingSortProperties>
-                <header>Cashflow (Australia)</header>
+                <header>AU Cashflow for Current Calendar Year</header>
                 <legendPosition>Right</legendPosition>
                 <report>ExpenseTrackerReports/AU_Cashflow_for_Current_Calendar_Year_poN</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Current Calendar Year</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
