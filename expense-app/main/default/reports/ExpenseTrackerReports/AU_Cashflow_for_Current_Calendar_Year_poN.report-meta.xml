@@ -7,9 +7,9 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Ledger__c.Total_Income_excluding_Super__c</column>
+            <column>Ledger__c.Cashflow__c</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Ledger__c.Month__c</groupingColumn>
@@ -27,7 +27,7 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Ledger__c.Total_Income__c</field>
+        <field>Ledger__c.Cashflow__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -36,10 +36,6 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Ledger__c.Total_Expenses__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Ledger__c.Cashflow__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -51,11 +47,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Ledger__c.Year__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Ledger__c.Month__c</field>
