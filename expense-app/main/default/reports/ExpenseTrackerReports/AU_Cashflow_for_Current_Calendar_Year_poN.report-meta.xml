@@ -27,7 +27,7 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Ledger__c.Total_Income__c</field>
+        <field>Ledger__c.Cashflow__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -36,10 +36,6 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Ledger__c.Total_Expenses__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Ledger__c.Cashflow__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -51,11 +47,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Ledger__c.Year__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Ledger__c.Month__c</field>
