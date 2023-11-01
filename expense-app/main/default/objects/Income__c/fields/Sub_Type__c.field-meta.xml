@@ -48,6 +48,11 @@
                 <label>Inheritance</label>
             </value>
             <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
                 <fullName>Loyalty</fullName>
                 <default>false</default>
                 <label>Loyalty</label>
@@ -117,6 +122,10 @@
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
             <valueName>Dividend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment</controllingFieldValue>
+            <valueName>Interest</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Investment</controllingFieldValue>
