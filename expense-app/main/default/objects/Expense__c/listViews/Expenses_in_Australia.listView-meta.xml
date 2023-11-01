@@ -8,8 +8,6 @@
     <columns>Type__c</columns>
     <columns>Sub_Type__c</columns>
     <columns>Additional_Info__c</columns>
-    <columns>Expense_Month__c</columns>
-    <columns>Ledger__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Expense_Month__c</field>

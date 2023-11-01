@@ -33,6 +33,11 @@
                 <label>Books and Magazines</label>
             </value>
             <value>
+                <fullName>Car Insurance</fullName>
+                <default>false</default>
+                <label>Car Insurance</label>
+            </value>
+            <value>
                 <fullName>Clothing</fullName>
                 <default>false</default>
                 <label>Clothing</label>
@@ -98,6 +103,16 @@
                 <label>Groceries</label>
             </value>
             <value>
+                <fullName>Health Insurance</fullName>
+                <default>false</default>
+                <label>Health Insurance</label>
+            </value>
+            <value>
+                <fullName>Home Insurance</fullName>
+                <default>false</default>
+                <label>Home Insurance</label>
+            </value>
+            <value>
                 <fullName>Income Tax</fullName>
                 <default>false</default>
                 <label>Income Tax</label>
@@ -118,6 +133,11 @@
                 <label>Land Tax</label>
             </value>
             <value>
+                <fullName>Life Insurance</fullName>
+                <default>false</default>
+                <label>Life Insurance</label>
+            </value>
+            <value>
                 <fullName>Maintenance</fullName>
                 <default>false</default>
                 <label>Maintenance</label>
@@ -126,6 +146,11 @@
                 <fullName>Medicine</fullName>
                 <default>false</default>
                 <label>Medicine</label>
+            </value>
+            <value>
+                <fullName>Other Insurance</fullName>
+                <default>false</default>
+                <label>Other Insurance</label>
             </value>
             <value>
                 <fullName>Other Tax</fullName>
@@ -333,6 +358,26 @@
         <valueSettings>
             <controllingFieldValue>Government</controllingFieldValue>
             <valueName>Other Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Car Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Health Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Home Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Life Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Other Insurance</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
