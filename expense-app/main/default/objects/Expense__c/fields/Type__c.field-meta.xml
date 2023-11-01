@@ -32,6 +32,11 @@
                 <label>Household</label>
             </value>
             <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
                 <fullName>Investment</fullName>
                 <default>false</default>
                 <label>Investment</label>
