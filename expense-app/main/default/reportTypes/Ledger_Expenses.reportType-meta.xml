@@ -183,6 +183,11 @@
             <field>External_ID__c</field>
             <table>Ledger__c.Expenses__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Reimbursable__c</field>
+            <table>Ledger__c.Expenses__r</table>
+        </columns>
         <masterLabel>Expenses</masterLabel>
     </sections>
 </ReportType>
