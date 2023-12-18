@@ -168,6 +168,10 @@
         <excludedStandardButtons>Accept</excludedStandardButtons>
         <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <listViewButtons>Clone_Monthly_Recurring_Expenses</listViewButtons>
+        <searchResultsAdditionalFields>Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sub_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
