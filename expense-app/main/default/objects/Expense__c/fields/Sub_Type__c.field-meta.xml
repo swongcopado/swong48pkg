@@ -148,6 +148,11 @@
                 <label>Medicine</label>
             </value>
             <value>
+                <fullName>Movies</fullName>
+                <default>false</default>
+                <label>Movies</label>
+            </value>
+            <value>
                 <fullName>Other Insurance</fullName>
                 <default>false</default>
                 <label>Other Insurance</label>
@@ -310,6 +315,10 @@
         <valueSettings>
             <controllingFieldValue>Leisure</controllingFieldValue>
             <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leisure</controllingFieldValue>
+            <valueName>Movies</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
