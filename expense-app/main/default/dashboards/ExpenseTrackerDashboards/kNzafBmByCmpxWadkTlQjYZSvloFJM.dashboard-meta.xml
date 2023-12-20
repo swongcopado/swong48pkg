@@ -9,7 +9,7 @@
     <dashboardColorPalette>unity</dashboardColorPalette>
     <dashboardGridLayout>
         <dashboardGridComponents>
-            <colSpan>6</colSpan>
+            <colSpan>5</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -19,7 +19,7 @@
                     <axisBinding>y</axisBinding>
                     <column>Expense__c.Amount__c</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentType>Bar</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -34,20 +34,45 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>AU Expenses This Month by Sub-Type</header>
-                <legendPosition>Right</legendPosition>
+                <legendPosition>Bottom</legendPosition>
                 <report>ExpenseTrackerReports/AU_Expenses_This_Month_by_SubType_dpf</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>11</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>6</colSpan>
-            <columnIndex>6</columnIndex>
+            <colSpan>2</colSpan>
+            <columnIndex>5</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Expense__c.Amount__c</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties/>
+                <header>Total Expenses this Month</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>ExpenseTrackerReports/AU_Expenses_This_Month_by_Type_trm</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>5</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>5</colSpan>
+            <columnIndex>7</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -57,7 +82,7 @@
                     <column>Expense__c.Amount__c</column>
                 </chartSummary>
                 <componentChartTheme>dark</componentChartTheme>
-                <componentType>Donut</componentType>
+                <componentType>Bar</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -72,17 +97,42 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>AU Expenses Last Month by Sub-Type</header>
-                <legendPosition>Right</legendPosition>
-                <maxValuesDisplayed>6</maxValuesDisplayed>
+                <legendPosition>Bottom</legendPosition>
                 <report>ExpenseTrackerReports/AU_Expenses_Last_Month_by_SubType_Wlv</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>11</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>5</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Expense__c.Amount__c</column>
+                </chartSummary>
+                <componentChartTheme>dark</componentChartTheme>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties/>
+                <header>Total Expenses Last Month</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>ExpenseTrackerReports/AU_Expenses_Last_Month_by_Type_JPo</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>6</colSpan>
@@ -95,7 +145,7 @@
                     <axisBinding>y</axisBinding>
                     <column>Expense__c.Amount__c</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentType>Bar</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -110,16 +160,16 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>AU Expenses This Month by Type</header>
-                <legendPosition>Right</legendPosition>
+                <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>ExpenseTrackerReports/AU_Expenses_This_Month_by_Type_trm</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>11</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -134,7 +184,7 @@
                     <column>Expense__c.Amount__c</column>
                 </chartSummary>
                 <componentChartTheme>dark</componentChartTheme>
-                <componentType>Donut</componentType>
+                <componentType>Bar</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -149,16 +199,16 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>AU Expenses Last Month by Type</header>
-                <legendPosition>Right</legendPosition>
+                <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>ExpenseTrackerReports/AU_Expenses_Last_Month_by_Type_JPo</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>11</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -196,7 +246,7 @@
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>16</rowIndex>
+            <rowIndex>19</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -235,7 +285,7 @@
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>16</rowIndex>
+            <rowIndex>19</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
