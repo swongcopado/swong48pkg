@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>All1</fullName>
+    <fullName>EZE33K</fullName>
     <columns>NAME</columns>
     <columns>Date__c</columns>
+    <columns>Amount__c</columns>
     <columns>Litres__c</columns>
     <columns>Price_per_litre__c</columns>
-    <columns>Amount__c</columns>
     <columns>Odometer__c</columns>
     <columns>Vehicle__c</columns>
     <columns>Efficiency__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
+        <field>Vehicle__c</field>
+        <operation>equals</operation>
+        <value>EZE33K</value>
+    </filters>
+    <filters>
         <field>Date__c</field>
         <operation>greaterThan</operation>
         <value>1/1/2023</value>
     </filters>
-    <label>All</label>
+    <label>EZE33K</label>
 </ListView>
