@@ -222,7 +222,8 @@
                     <axisBinding>y</axisBinding>
                     <column>Expense__c.Amount__c</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentChartTheme>dark</componentChartTheme>
+                <componentType>Bar</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -236,12 +237,11 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>AU Investment Expenses This Month</header>
-                <legendPosition>Right</legendPosition>
-                <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>ExpenseTrackerReports/AU_InvestmentExpenses_This_Month_OcQ</report>
+                <header>AU Investment Expenses Last Month</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>ExpenseTrackerReports/AU_Investment_Expenses_Last_Month_lcX</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
@@ -293,6 +293,7 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
+    <owner>swong+48@copado.com</owner>
     <runningUser>swong+48@copado.com</runningUser>
     <textColor>#000000</textColor>
     <title>Expense Main Dashboard</title>
